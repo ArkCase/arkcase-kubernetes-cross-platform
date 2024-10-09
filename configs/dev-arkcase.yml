@@ -1,0 +1,28 @@
+global:
+  conf:
+    rdbms:
+      dialect: mysql
+    content:
+      dialect: s3
+  dev:
+    enabled: true
+    resources: false
+    wars:
+      arkcase: "path:/home/docker/arkcase/app"
+    conf: "path:/home/docker/arkcase/config"
+    debug:
+      arkcase:
+        enabled: true
+        #port: 8888
+        suspend: false
+      cloudconfig:
+        enabled: true
+        suspend: false
+  image:
+    core:
+      arkcase:
+        registry: public.ecr.aws
+        repository: arkcase/core
+        tag: 3.0.0
+reports:
+  enabled: false
