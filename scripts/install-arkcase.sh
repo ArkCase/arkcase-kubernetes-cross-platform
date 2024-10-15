@@ -13,7 +13,7 @@ esac
 echo "Detected OS: ${OS}"
 
 hostsFilePath=""
-hostsEntry="127.0.0.1 core messaging rdbms ldap search content-main messaging.default.svc.cluster.local rdbms.default.svc.cluster.local ldap.default.svc.cluster.local search.default.svc.cluster.local content-main.default.svc.cluster.local core.default.svc.cluster.local"
+hostsEntry="127.0.0.1 core.default.svc.cluster.local messaging rdbms ldap search content-main messaging.default.svc.cluster.local rdbms.default.svc.cluster.local ldap.default.svc.cluster.local search.default.svc.cluster.local content-main.default.svc.cluster.local"
 
 if [ "${OS}" == "Windows" ]; then
     hostsFilePath="/c/Windows/System32/drivers/etc/hosts"
